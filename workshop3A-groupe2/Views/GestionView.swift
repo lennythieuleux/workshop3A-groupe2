@@ -9,7 +9,9 @@ import SwiftUI
 
 struct GestionView: View {
     var body: some View {
-        Text("Gestion")
+        VStack{
+            Text("Gestion")
+        }.navigationTitle(Text("Gestion"))
     }
 }
 

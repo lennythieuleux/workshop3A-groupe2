@@ -9,7 +9,9 @@ import SwiftUI
 
 struct MonCompteView: View {
     var body: some View {
-        Text("Mon compte")
+        VStack{
+            
+        }.navigationTitle(Text("Mon Compte"))
     }
 }
 
