@@ -15,8 +15,11 @@ struct LeSaviezVousCoursCardView: View {
     var body: some View {
         NavigationLink(destination: LeSaviezVousCurriculumDetailsView()) {
                 ZStack{
+                    Image("card")
+                        .resizable(resizingMode: .stretch)
                     VStack{
                         ZStack{
+                            
                             Image(systemName: "house.fill").foregroundColor(Color(red: 0.09803921568627451, green: 0.20784313725490197, blue: 0.37254901960784315))
                                 .padding(.all, 25.0)
                         }.background(.white).cornerRadius(.infinity)

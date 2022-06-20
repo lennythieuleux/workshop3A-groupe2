@@ -27,6 +27,7 @@ struct LeSaviezVousCurriculumDetailsView: View {
                             Spacer()
                             HStack{
                                 ZStack{
+                                    Image("controls")
                                     Image(systemName: "star.fill").padding(10)
                                        
                                 }
@@ -35,6 +36,7 @@ struct LeSaviezVousCurriculumDetailsView: View {
                                 .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(5)
                                 ZStack{
+                                    Image("controls")
                                     Image(systemName: "questionmark").padding(10)
                                 }
                                 .frame(width: 40.0, height: 40.0)
