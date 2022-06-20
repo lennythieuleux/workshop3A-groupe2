@@ -9,34 +9,39 @@ import SwiftUI
 
 struct LeSaviezVousView: View {
     var body: some View {
+        NavigationView{
             ScrollView{
                 VStack{
                     Text("Finance")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
-                        .padding(.horizontal)
+                        .padding(.init(top: 50, leading: 25, bottom: 0, trailing: 0))
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
+                            Spacer()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
+                            Spacer()
                         }
                     }
-                    .padding(.init(top: 0, leading: 25, bottom: 50, trailing: 0))
+                    .padding(.bottom, 50)
                     Spacer()
                     Text("Épargne")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 25.0)
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
+                            Spacer()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
+                            Spacer()
                         }
-                    }.padding(.init(top: 0, leading: 25, bottom: 50, trailing: 0))
+                    }.padding(.bottom, 50)
                 }
                 Spacer()
                 VStack{
@@ -44,31 +49,35 @@ struct LeSaviezVousView: View {
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 25.0)
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
+                            Spacer()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
+                            Spacer()
                         }
-                    }.padding(.init(top: 0, leading: 25, bottom: 50, trailing: 0))
-                    Spacer()
+                    }.padding(.bottom, 50)
                     Text("Bourse")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
-                        .padding(.horizontal)
+                        .padding(.horizontal, 25.0)
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
+                            Spacer()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
                             LeSaviezVousCoursCardView()
+                            Spacer()
                         }
-                    }.padding(.init(top: 0, leading: 25, bottom: 50, trailing: 0))
+                    }.padding(.bottom, 50)
                     Spacer()
                 }
-            }.navigationTitle(Text("Le saviez-vous"))
+            }.navigationTitle(Text("Le saviez-vous")).padding(.bottom, 25)
         
+        }
     }
 }
 

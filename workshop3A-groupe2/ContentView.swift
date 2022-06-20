@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView{
             VStack{
                 TabView {
                     AccueilView()
@@ -29,12 +28,7 @@ struct ContentView: View {
                             Label("Mon compte", systemImage: "person.fill")
                     }
                 }
-                .padding(.top)
             }
-        }
-        
-        
-        
     }
     
 
