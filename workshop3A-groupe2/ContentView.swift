@@ -9,9 +9,40 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            
+            
+            
+            
+            
+        }
+        
+        VStack{
+            TabView {
+                AccueilView()
+                    .tabItem {
+                        Label("Accueil", systemImage: "house.fill")
+                }
+                LeSaviezVousView()
+                    .tabItem {
+                        Label("Le saviez-vous ?", systemImage: "lightbulb.fill")
+                }
+                GestionView()
+                    .tabItem {
+                        Label("Gestion", systemImage: "chart.pie.fill")
+                }
+                MonCompteView()
+                    .tabItem {
+                        Label("Mon compte", systemImage: "person.fill")
+                }
+            }
+        }
+        
     }
+    
+
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
