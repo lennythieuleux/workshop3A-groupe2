@@ -20,6 +20,7 @@
 		B831416B2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831416A2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift */; };
 		B831416E2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831416D2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift */; };
 		B83141702860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831416F2860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift */; };
+		B83141722860C05100641BA3 /* LeSaviezVousDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83141712860C05100641BA3 /* LeSaviezVousDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		B831416A2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousCurriculumDetails.swift; sourceTree = "<group>"; };
 		B831416D2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousCurriculumDetailsView.swift; sourceTree = "<group>"; };
 		B831416F2860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousCurriculumDetailsCard.swift; sourceTree = "<group>"; };
+		B83141712860C05100641BA3 /* LeSaviezVousDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				B83141612860740600641BA3 /* AccueilView.swift */,
 				B83141632860741D00641BA3 /* LeSaviezVousView.swift */,
 				B831416D2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift */,
+				B83141712860C05100641BA3 /* LeSaviezVousDetails.swift */,
 				B831416C2860B01800641BA3 /* Components */,
 			);
 			path = Views;
@@ -194,6 +197,7 @@
 				B831414C2860646500641BA3 /* ContentView.swift in Sources */,
 				B831416B2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift in Sources */,
 				B83141702860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift in Sources */,
+				B83141722860C05100641BA3 /* LeSaviezVousDetails.swift in Sources */,
 				B831416828607C0100641BA3 /* LeSaviezVousCoursCardView.swift in Sources */,
 				B83141622860740600641BA3 /* AccueilView.swift in Sources */,
 				B831414A2860646500641BA3 /* workshop3A_groupe2App.swift in Sources */,

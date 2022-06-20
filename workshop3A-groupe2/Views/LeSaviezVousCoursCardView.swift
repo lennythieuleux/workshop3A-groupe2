@@ -9,26 +9,30 @@ import SwiftUI
 
 struct LeSaviezVousCoursCardView: View {
     var card: LeSaviezVous
+    
+    var data = leSaviezVousList
+    
     var body: some View {
-        ZStack{
-            VStack{
+        NavigationLink(destination: LeSaviezVousCurriculumDetailsView()) {
                 ZStack{
-                    Image(systemName: "house.fill")
-                        .padding(.all, 25.0)
-                }.background(.white).cornerRadius(.infinity)
-                Text(card.title)
-                    .font(.headline)
-                    .padding(.bottom, 2.0)
-                    .foregroundColor(.white)
-                Text(card.content)
-                    .font(.caption)
-                    .foregroundColor(.white)
+                    VStack{
+                        ZStack{
+                            Image(systemName: "house.fill").foregroundColor(Color(red: 0.09803921568627451, green: 0.20784313725490197, blue: 0.37254901960784315))
+                                .padding(.all, 25.0)
+                        }.background(.white).cornerRadius(.infinity)
+                        Text(card.title)
+                            .font(.headline)
+                            .padding(.bottom, 2.0)
+                            .foregroundColor(.white)
+                        Text(card.content)
+                            .font(.caption)
+                            .foregroundColor(.white)
+                    }
+                }
+                .frame(width: 200,height: 165.0)
+                .background(Color(red: 0.09803921568627451, green: 0.20784313725490197, blue: 0.37254901960784315))
+                .cornerRadius(/*@START_MENU_TOKEN@*/6.0/*@END_MENU_TOKEN@*/)
             }
-        }
-        .padding(.all)
-        .frame(width: 200,height: 165.0)
-        .background(Color(red: 0.09803921568627451, green: 0.20784313725490197, blue: 0.37254901960784315))
-        .cornerRadius(/*@START_MENU_TOKEN@*/6.0/*@END_MENU_TOKEN@*/)
     }
 }
 

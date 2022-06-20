@@ -9,17 +9,19 @@ import SwiftUI
 
 struct LeSaviezVousCurriculumDetailsView: View {
     var columns = [GridItem(.adaptive(minimum: 300),spacing: 20)]
+    
+    
     var body: some View {
             ScrollView{
                 VStack{
                     VStack{
                         HStack{
                             VStack(alignment: .leading){
-                                Text("Nom du cours")
-                                    .font(.headline)
-                                    .fontWeight(.bold)
+//                                Text("Faire des économies")
+//                                    .font(.headline)
+//                                    .fontWeight(.bold)
                                 Text("25% réalisés 2/6")
-                                    .font(.subheadline)
+                                    .font(.headline)
                                     .fontWeight(.light)
                             }
                             Spacer()
@@ -57,8 +59,9 @@ struct LeSaviezVousCurriculumDetailsView: View {
                     }
                     
                 }
-                .padding(.horizontal, 25.0)
-            }.navigationTitle(Text("Le saviez-vous")).padding(.bottom, 25)
+                .padding([.leading, .bottom, .trailing], 25.0)
+                .offset(y: 25)
+            }.navigationTitle(Text("Faire des économies")).padding(.bottom, 25)
         }
 }
 
