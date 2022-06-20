@@ -9,9 +9,11 @@ import SwiftUI
 
 struct AccueilView: View {
     var body: some View {
-        VStack{
-            
-        }.navigationTitle(Text("Accueil"))
+        NavigationView{
+            VStack{
+                
+            }.navigationTitle(Text("Accueil"))
+        }
     }
 }
 

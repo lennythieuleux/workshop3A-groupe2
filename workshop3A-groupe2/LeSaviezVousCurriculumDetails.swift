@@ -16,7 +16,7 @@ struct LeSaviezVousCurriculumDetails: Identifiable{
 
 var LeSaviezVousCurriculumDetailsList = [
     [
-        LeSaviezVousCurriculumDetails(title: "Économied'énergie", content: "blablabla", duration: 5),
+        LeSaviezVousCurriculumDetails(title: "Économie d'énergie", content: "blablabla", duration: 5),
         LeSaviezVousCurriculumDetails(title: "Mieux consommer", content: "blablabla", duration: 12),
         LeSaviezVousCurriculumDetails(title: "Les soldes", content: "blablabla", duration: 24),
         LeSaviezVousCurriculumDetails(title: "Mes questions d'argent : le jeu", content: "blablabla", duration: 7),

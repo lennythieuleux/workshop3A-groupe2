@@ -18,6 +18,8 @@
 		B83141662860775500641BA3 /* LeSaviezVous.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83141652860775500641BA3 /* LeSaviezVous.swift */; };
 		B831416828607C0100641BA3 /* LeSaviezVousCoursCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831416728607C0100641BA3 /* LeSaviezVousCoursCardView.swift */; };
 		B831416B2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831416A2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift */; };
+		B831416E2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831416D2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift */; };
+		B83141702860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B831416F2860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		B83141652860775500641BA3 /* LeSaviezVous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVous.swift; sourceTree = "<group>"; };
 		B831416728607C0100641BA3 /* LeSaviezVousCoursCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousCoursCardView.swift; sourceTree = "<group>"; };
 		B831416A2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousCurriculumDetails.swift; sourceTree = "<group>"; };
+		B831416D2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousCurriculumDetailsView.swift; sourceTree = "<group>"; };
+		B831416F2860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSaviezVousCurriculumDetailsCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,19 @@
 				B831415F2860729900641BA3 /* MonCompteView.swift */,
 				B83141612860740600641BA3 /* AccueilView.swift */,
 				B83141632860741D00641BA3 /* LeSaviezVousView.swift */,
-				B831416728607C0100641BA3 /* LeSaviezVousCoursCardView.swift */,
+				B831416D2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift */,
+				B831416C2860B01800641BA3 /* Components */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B831416C2860B01800641BA3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B831416728607C0100641BA3 /* LeSaviezVousCoursCardView.swift */,
+				B831416F2860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +190,10 @@
 			files = (
 				B83141662860775500641BA3 /* LeSaviezVous.swift in Sources */,
 				B83141642860741D00641BA3 /* LeSaviezVousView.swift in Sources */,
+				B831416E2860B04300641BA3 /* LeSaviezVousCurriculumDetailsView.swift in Sources */,
 				B831414C2860646500641BA3 /* ContentView.swift in Sources */,
 				B831416B2860A5AF00641BA3 /* LeSaviezVousCurriculumDetails.swift in Sources */,
+				B83141702860B52C00641BA3 /* LeSaviezVousCurriculumDetailsCard.swift in Sources */,
 				B831416828607C0100641BA3 /* LeSaviezVousCoursCardView.swift in Sources */,
 				B83141622860740600641BA3 /* AccueilView.swift in Sources */,
 				B831414A2860646500641BA3 /* workshop3A_groupe2App.swift in Sources */,
