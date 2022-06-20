@@ -8,20 +8,23 @@
 import SwiftUI
 
 struct LeSaviezVousCoursCardView: View {
+    var card: LeSaviezVous
     var body: some View {
         ZStack{
             VStack{
-                Image(systemName: "house.fill")
-                    .padding(.all)
-                Text("Nom du cours")
+                ZStack{
+                    Image(systemName: "house.fill")
+                        .padding(.all, 25.0)
+                }.background(.white).cornerRadius(.infinity)
+                Text(card.title)
                     .font(.headline)
                     .padding(.bottom, 2.0)
-                Text("Description du cours")
+                Text(card.content)
                     .font(.caption)
             }
         }
         .padding(.all)
-        .frame(height: 165.0)
+        .frame(width: 200,height: 165.0)
         .background(.ultraThinMaterial)
         .cornerRadius(6.0)
     }
@@ -29,6 +32,6 @@ struct LeSaviezVousCoursCardView: View {
 
 struct LeSaviezVousCoursCardView_Previews: PreviewProvider {
     static var previews: some View {
-        LeSaviezVousCoursCardView()
+        LeSaviezVousCoursCardView(card: leSaviezVousList[0][0])
     }
 }

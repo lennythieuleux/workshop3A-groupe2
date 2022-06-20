@@ -20,9 +20,9 @@ struct LeSaviezVousView: View {
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
                             Spacer()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
+                            ForEach(leSaviezVousList[0], id: \.id){
+                                card in LeSaviezVousCoursCardView(card: card)
+                            }
                             Spacer()
                         }
                     }
@@ -36,9 +36,9 @@ struct LeSaviezVousView: View {
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
                             Spacer()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
+                            ForEach(leSaviezVousList[1], id: \.id){
+                                card in LeSaviezVousCoursCardView(card: card)
+                            }
                             Spacer()
                         }
                     }.padding(.bottom, 50)
@@ -53,9 +53,9 @@ struct LeSaviezVousView: View {
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
                             Spacer()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
+                            ForEach(leSaviezVousList[2], id: \.id){
+                                card in LeSaviezVousCoursCardView(card: card)
+                            }
                             Spacer()
                         }
                     }.padding(.bottom, 50)
@@ -67,9 +67,9 @@ struct LeSaviezVousView: View {
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
                             Spacer()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
-                            LeSaviezVousCoursCardView()
+                            ForEach(leSaviezVousList[3], id: \.id){
+                                card in LeSaviezVousCoursCardView(card: card)
+                            }
                             Spacer()
                         }
                     }.padding(.bottom, 50)

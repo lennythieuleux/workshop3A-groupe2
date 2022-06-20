@@ -14,8 +14,40 @@ struct LeSaviezVous: Identifiable{
 }
 
 var leSaviezVousList = [
-    LeSaviezVous(title: "Saviez-vous n°1", content: "blablabla"),
-    LeSaviezVous(title: "Saviez-vous n°2", content: "blablabla"),
-    LeSaviezVous(title: "Saviez-vous n°3", content: "blablabla"),
-    LeSaviezVous(title: "Saviez-vous n°4", content: "blablabla"),
+    [
+        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
+        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
+        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
+        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+    ],
+    [
+        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
+        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
+        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
+        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+    ],
+    [
+        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
+        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
+        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
+        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+    ],
+    [
+        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
+        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
+        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
+        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+    ],
+    [
+        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
+        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
+        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
+        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+    ],
+    [
+        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
+        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
+        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
+        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+    ]
 ]
