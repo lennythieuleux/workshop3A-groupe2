@@ -46,7 +46,7 @@ struct LeSaviezVousCurriculumDetailsView: View {
                             }
                         }
                         HStack{
-                            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Metus, nibh adipiscing nibh pretium dolor, commodo quam convallis. ")
+                            Text("Alimentation, logement, transport, santé, loisirs… Selon L’Observatoire de la vie étudiante (OVE), votre budget moyen s’élève à 684,50 € par mois, sans compter celui des études en elles-mêmes.")
                                 .font(.body)
                                 .padding(.vertical)
                         }

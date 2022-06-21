@@ -21,7 +21,11 @@ struct ContentView: View {
                     }
                     GestionView()
                         .tabItem {
-                            Label("Gestion", systemImage: "chart.pie.fill")
+                            Label("Gestion", systemImage: "chart.line.uptrend.xyaxis")
+                    }
+                    RecompensesView()
+                        .tabItem {
+                            Label("Récompenses", systemImage: "gift")
                     }
                     MonCompteView()
                         .tabItem {

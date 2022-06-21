@@ -12,11 +12,6 @@ struct LeSaviezVousDetails: View {
         ZStack {
             ScrollView{
                 VStack{
-    //                    Text("Faire des économies d'énergie")
-    //                        .font(.headline)
-    //                        .fontWeight(.regular)
-    //                        .multilineTextAlignment(.center)
-    //                        .padding(.bottom, 15.0).offset(y: -25)
                     HStack{
                         VStack(alignment: .leading){
                             Text("5 conseils pour maîtriser son budget étudiant")
@@ -39,47 +34,113 @@ struct LeSaviezVousDetails: View {
                         .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                         .cornerRadius(5)
                     }.padding(.bottom, 25)
-                    Image("video")
-                    Spacer()
-                }
-                .padding(.horizontal)
-                Spacer()
-                VStack(alignment: .leading){
-                    Text("1- Soyez OR-GA-NI-SÉ !")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.leading)
-                        .padding(.vertical, 5.0)
-                        
-                    Text("Quel que soit l’état de votre compte en banque, ne faites jamais le mort avec l’administration, elle vous retrouvera dans tous les cas ! Prévenez-la si vous êtes dans une situation difficile, les organismes trouveront une solution. Payez votre loyer chaque mois. Votre propriétaire sera indulgent pour les 1ers retards, puis vous recevrez une relance et une autre avec accusé de réception. Cela peut aller jusqu’à la note d’huissier (dont vous paierez les frais) où il sera plus que temps de réagir. Pour réussir à régler vos factures en temps et en heure, pensez au prélèvement automatique, qui évitera bien des tracas tout en rassurant le propriétaire ! Vous attendiez une carte postale aux couleurs du Brésil, et voici encore une facture ? Comptez sur une correspondance régulière avec EDF-GDF qui vous adressera sa note tous les 2 mois. Pour l’intégrer plus facilement à votre budget, vous pouvez la mensualiser. En cas de difficultés financières, appelez pour reporter ou échelonner le paiement. La négociation est le maître-mot. Vous pouvez profiter de leurs divers tarifs : base, tempo ou heures pleines / creuses. Répondez aux relevés de compteur, cela vous évitera de mauvaises surprises à votre départ. Pour votre logement comme pour le reste, renseignez vous le plus possible sur les aides et bourses publiques et privées auxquelles vous avez droit.")
-                        .font(.body)
-                }
-                .padding(.horizontal, 25.0)
-                Spacer()
-                    .padding(.bottom)
-                VStack{
-                    Button(action : { }){
+                    VStack(alignment: .leading){
+                        Text("Question 1 :")
+                            .font(.title2)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                            .padding(.trailing, 25.0)
+                        Text("Si vous êtes dans une situation financière délicate, comment devez-vous agir vis-à-vis de l’administration ?")
+                            .font(.body)
+                            .multilineTextAlignment(.leading)
+                            
+                    }
+                    VStack{
+                        NavigationLink(destination: LeSaviezVousView()) {
                         ZStack{
                             Image("card")
                                 .resizable(resizingMode: .stretch)
-                            Text("Valider ce module")
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
+                            HStack(alignment: .center){
+                                HStack(alignment: .center){
+                                    Spacer()
+                                    Image(systemName: "circle").resizable(capInsets: EdgeInsets()).foregroundColor(.white).frame(width: 30.0, height: 30.0)
+                                    Spacer()
+                                    Text("Mentir et promettre un paiement très rapide").font(.callout).foregroundColor(.white).multilineTextAlignment(.leading).padding(.leading)
+                                    Spacer()
+                                }
+                                .padding(.horizontal)
+                            }
+                            
+                            
                         }
-                        .frame(width: .infinity, height: 60.0)
+                        .frame(height: 60.0)
+                                .cornerRadius(6)
+                        }
+                        NavigationLink(destination: LeSaviezVousView()) {
+                        ZStack{
+                            Image("card")
+                                .resizable(resizingMode: .stretch)
+                            HStack(alignment: .center){
+                                HStack(alignment: .center){
+                                    Spacer()
+                                    Image(systemName: "circle").resizable(capInsets: EdgeInsets()).foregroundColor(.white).frame(width: 30.0, height: 30.0)
+                                    Spacer()
+                                    Text("Communiquer sur la difficulté de la situation pour trouver des solutions").font(.callout).foregroundColor(.white).multilineTextAlignment(.leading).padding(.leading)
+                                    Spacer()
+                                }
+                                .padding(.horizontal)
+                            }
+                            
+                            
+                        }
+                        .frame(height: 60.0)
+                                .cornerRadius(6)
+                        }
+                        NavigationLink(destination: LeSaviezVousView()) {
+                        ZStack{
+                            Image("card")
+                                .resizable(resizingMode: .stretch)
+                            HStack(alignment: .center){
+                                HStack(alignment: .center){
+                                    Spacer()
+                                    Image(systemName: "circle").resizable(capInsets: EdgeInsets()).foregroundColor(.white).frame(width: 30.0, height: 30.0)
+                                    Spacer()
+                                    Text("Ne jamais répondre aux appels téléphoniques").font(.callout).foregroundColor(.white).multilineTextAlignment(.leading).padding(.leading)
+                                    Spacer()
+                                }
+                                .padding(.horizontal)
+                            }
+                            
+                            
+                        }
+                        .frame(height: 60.0)
+                                .cornerRadius(6)
+                            
+                            
+                        }
                         
+                        
+                            VStack{
+                                Button(action : {  }){
+                                    ZStack{
+                                        Image("card")
+                                            .resizable(resizingMode: .stretch)
+                                        Text("Valider ma réponse")
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.white)
+                                    }
+                                    .frame(width: .infinity, height: 60.0)
+                                    .cornerRadius(6)
+                                    
+                                }
+                            }.offset(y: 150)
+                            
                     }
-                    .padding()
+                    
+                        .padding(.vertical)
+                    }
+                
                     
                 }
                 .padding(25.0)
-                .frame(height: 60.0)
+                
             }
     }
+        
 }
 
 struct LeSaviezVousDetails_Previews: PreviewProvider {
     static var previews: some View {
         LeSaviezVousDetails()
     }
-}}
+}
