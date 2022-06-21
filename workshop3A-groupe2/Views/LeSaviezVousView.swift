@@ -73,7 +73,7 @@ struct LeSaviezVousView: View {
                 .padding(.top, 15.0)
                 Spacer()
                 VStack{
-                    Text("Finance")
+                    Text("Budget")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
@@ -89,7 +89,7 @@ struct LeSaviezVousView: View {
                     }
                     .padding(.bottom, 50)
                     Spacer()
-                    Text("Épargne")
+                    Text("Comptes et moyens de paiement")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)

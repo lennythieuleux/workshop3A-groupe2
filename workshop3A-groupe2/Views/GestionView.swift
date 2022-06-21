@@ -8,61 +8,44 @@
 import SwiftUI
 
 struct GestionView: View {
-
-    
     var body: some View {
-        ZStack {
-            ScrollView{
-                VStack{
-                    Image("recompenses-lsv")
-                        .resizable(resizingMode: .stretch)
-                        .frame(width: 350.0, height: 243.0)
+        NavigationView{
+            VStack{
+                NavigationLink(destination: EpargneView()) {
+                    ZStack{
+            Image("save")
+                .resizable(resizingMode: .stretch)
+            HStack(alignment: .center){
+                HStack(alignment: .center){
                     Spacer()
-                    VStack{
-//                        Button(action : { self.presentationMode.wrappedValue.dismiss() }){
-//                            NavigationLink(destination: QuizResultView()){
-//                            ZStack{
-//                                Image("card")
-//                                    .resizable(resizingMode: .stretch)
-//                                Text("Voir mes récompenses")
-//                                    .fontWeight(.bold)
-//                                    .foregroundColor(.white)
-//                            }
-//                            .frame(width: .infinity, height: 60.0)
-//                            .cornerRadius(6)
-//
-//                        }
-//                            Button(action : { self.presentationMode.wrappedValue.dismiss() }){
-//                                NavigationLink(destination: LeSaviezVousCurriculumDetailsView()){
-//                                ZStack{
-//                                    Image("card")
-//                                        .resizable(resizingMode: .stretch)
-//                                    Text("Terminer")
-//                                        .fontWeight(.bold)
-//                                        .foregroundColor(.white)
-//                                }
-//                                .frame(width: .infinity, height: 60.0)
-//                                .cornerRadius(6)
-//
-//                            }
+                    Text("Commencer à épargner").font(.system(size: 24)).foregroundColor(.white).multilineTextAlignment(.center).padding(.leading)
+                    Spacer()
                 }
-            }
+                .padding(.horizontal)
+            }}.cornerRadius(12)
+                    .frame(width: 300.0, height: 180.0)}
+                VStack{
+                    NavigationLink(destination: EpargneView()) {
+                        ZStack{
+                Image("invest")
+                    .resizable(resizingMode: .stretch)
+                HStack(alignment: .center){
+                    HStack(alignment: .center){
+                        Spacer()
+                        Text("Commencer à investir").font(.system(size: 24)).foregroundColor(.white).multilineTextAlignment(.center).padding(.leading)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                }}
+                        .frame(width: 300.0, height: 180.0)}
+                }.cornerRadius(12)}.navigationTitle(Text("Gestion"))
+            
         }
     }
 }
-                
-            }
-
-        
-        
-
-
-
-
 
 struct GestionView_Previews: PreviewProvider {
     static var previews: some View {
         GestionView()
     }
 }
-
