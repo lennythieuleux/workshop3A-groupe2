@@ -256,8 +256,9 @@ struct DetailedView: View {
                                             .cornerRadius(6)
                                             
                                         }
-                                    }.offset(y: 100)
-                                    
+                                    }.offset(y: 70)
+                                        Spacer()
+                                            .padding(.bottom, 50.0)
                             }
                                 .padding(.vertical)
                             }
