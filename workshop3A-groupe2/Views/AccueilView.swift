@@ -13,11 +13,11 @@ struct AccueilView: View {
                 VStack{
                     Image("logo-educ")
                         .padding(.vertical, 50.0)
-                    Text("Bravo ! Ton épargne est suppérieur à tes dépenses.")
+                    Text("Bravo ! Ton épargne est supérieure à tes dépenses.")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .frame(width: 300.0)
-                    Text("Tu y es presque, plus que 452,56€ y tu es arrivés à  ton objectif d’économie. ")
+                    Text("Tu y es presque, plus que 452,56€ pour arriver à ton objectif d’économie. ")
                         .font(.callout)
                         .multilineTextAlignment(.center)
                         .frame(width: 300.0)
