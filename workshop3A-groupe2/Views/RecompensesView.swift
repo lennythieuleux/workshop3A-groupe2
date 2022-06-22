@@ -25,8 +25,6 @@ struct RecompensesView: View {
                     .padding(.init(top: 25, leading: 25, bottom: 0, trailing: 25))
                     
                     ZStack{
-                        Button(action : { print("recompenses") }){
-                            NavigationLink(destination: RecompensesView()){
                             ZStack{
                                 Spacer()
                                 Image("card")
@@ -46,10 +44,10 @@ struct RecompensesView: View {
                             .frame(width: .infinity, height: 60.0)
                             .cornerRadius(6)
 
-                        }
+                        
 
                     
-                }.padding(.top, 25.0).navigationTitle(Text("Récompenses"))
+                .padding(.top, 25.0).navigationTitle(Text("Récompenses"))
                     }.padding(.horizontal, 25.0)
                     
                 }
@@ -64,8 +62,6 @@ struct RecompensesView: View {
                 
                 VStack{
                     ZStack{
-                        Button(action : { print("recompenses") }){
-                            NavigationLink(destination: RecompensesView()){
                             ZStack{
                                 Spacer()
                                 Image("card")
@@ -87,9 +83,6 @@ struct RecompensesView: View {
                             }
                             .frame(width: .infinity, height: 60.0)
                             .cornerRadius(6)
-
-                        }
-                        }
                 
                         }
                 

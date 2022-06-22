@@ -19,7 +19,7 @@ struct LeSaviezVousView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
                         .padding(.init(top: 50, leading: 25, bottom: 0, trailing: 0))
-                    Text("Formez-vous grâce à nos cours techniques et accessibles. Ayez toute les clés en mains pour vous assurer un avenir serein.").padding(.init(top: 1, leading: 25, bottom: 0, trailing: 0))
+                    Text("Formez-vous grâce à nos cours techniques et accessibles. Ayez toutes les clés en mains pour vous assurer un avenir serein.").padding(.init(top: 1, leading: 25, bottom: 0, trailing: 0))
                     
                 }
                 VStack{

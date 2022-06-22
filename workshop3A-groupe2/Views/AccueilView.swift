@@ -17,7 +17,7 @@ struct AccueilView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .frame(width: 300.0)
-                    Text("Tu y es presque, plus que 452€56 y tu es arrivés à  ton objectif d’économie. ")
+                    Text("Tu y es presque, plus que 452,56€ y tu es arrivés à  ton objectif d’économie. ")
                         .font(.callout)
                         .multilineTextAlignment(.center)
                         .frame(width: 300.0)
@@ -25,7 +25,7 @@ struct AccueilView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fill)
                         .frame(width: .infinity)
-                    Text("Nous vous conseillons d’améliorer votre score.Certains crédits sous certaines conditions peuvent être envisageables.Augmente ton score à 660 points, pour obtenir un crédit ou un financement à des conditions normales et obtenir plus de récompenses.  Plus d’informations. ")
+                    Text("Nous vous conseillons d’améliorer votre score. Certains crédits sous certaines conditions peuvent être envisageables. Augmente ton score à 660 points, pour obtenir un crédit ou un financement à des conditions normales et obtenir plus de récompenses.  Plus d’informations. ")
                         .padding(.top)
                     VStack{
                         Text("Le saviez-vous?")
@@ -42,8 +42,6 @@ struct AccueilView: View {
                     
                     VStack{
                         ZStack{
-                            Button(action : { print("recompenses") }){
-                                NavigationLink(destination: RecompensesView()){
                                 ZStack{
                                     Spacer()
                                     Image("card")
@@ -62,9 +60,6 @@ struct AccueilView: View {
                                 }
                                 .frame(width: .infinity, height: 60.0)
                                 .cornerRadius(6)
-
-                            }
-                            }
                     
                             }
                     

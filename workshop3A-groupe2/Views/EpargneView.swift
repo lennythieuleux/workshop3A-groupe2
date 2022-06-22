@@ -38,18 +38,22 @@ struct EpargneView: View {
                     }
                 .padding(10.0)
                 HStack{
-                    Text("Mon Epargne")
-                        .fontWeight(.bold)
-                        .padding(10)
-                        .foregroundColor(.white)
-                        .background(Color(red: 0.09803921568627451, green: 0.20784313725490197, blue: 0.37254901960784315))
-                        
-                    
-                    Text("Mes investissement")
-                        .fontWeight(.bold)
-                        .padding(10)
-                        .border(Color(red: 0.3215686274509804, green: 0.8235294117647058, blue: 0.8235294117647058))
-                        .foregroundColor(Color(red: 0.3215686274509804, green: 0.8235294117647058, blue: 0.8235294117647058))
+                    Image("tab-select")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 350.0)
+//                    Text("Mon Epargne")
+//                        .fontWeight(.bold)
+//                        .padding(10)
+//                        .foregroundColor(.white)
+//                        .background(Color(red: 0.09803921568627451, green: 0.20784313725490197, blue: 0.37254901960784315))
+//
+//
+//                    Text("Mes investissement")
+//                        .fontWeight(.bold)
+//                        .padding(10)
+//                        .border(Color(red: 0.3215686274509804, green: 0.8235294117647058, blue: 0.8235294117647058))
+//                        .foregroundColor(Color(red: 0.3215686274509804, green: 0.8235294117647058, blue: 0.8235294117647058))
                 }
                 .cornerRadius(10)
                 HStack{
@@ -80,7 +84,7 @@ struct EpargneView: View {
                     HStack{
                     Text("●")
                             .foregroundColor(.red)
-                    Text("Depense")
+                    Text("Dépense")
                         .padding(5)
                         .font(.system(size: 12))
                     }
@@ -131,7 +135,7 @@ struct EpargneView: View {
                             HStack{
                             Text("●")
                                     .foregroundColor(Color(red: 0.09803921568627451, green: 0.20784313725490197, blue: 0.37254901960784315))
-                            Text("15/06 epargne")
+                            Text("15/06 Épargne")
                                     .font(.system(size: 18))
                                     .padding(.vertical)
                             }
@@ -147,7 +151,7 @@ struct EpargneView: View {
                             HStack{
                             Text("●")
                                     .foregroundColor(.red)
-                            Text("10/06 Depense perso")
+                            Text("10/06 Dépense perso")
                                     .font(.system(size: 18))
                                     .padding(.vertical)
                             }
@@ -225,7 +229,7 @@ struct EpargneView: View {
                     .cornerRadius(12)
                         .frame(width: 300.0, height: 50.0)
                     HStack(alignment: .center){
-                        Text("Vous vous rapprocher de votre but")
+                        Text("Vous vous rapprochez de votre but")
                     }
                     .padding(.top)
                     HStack{
