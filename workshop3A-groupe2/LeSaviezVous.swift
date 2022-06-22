@@ -11,43 +11,38 @@ struct LeSaviezVous: Identifiable{
     var id = UUID()
     var title: String
     var content: String
+    var img: String
 }
 
 var leSaviezVousList = [
     [
-        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
-        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
-        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
-        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+        LeSaviezVous(title: "Faire des économies", content: "1h15 sur 6 cours", img: "img1"),
+        LeSaviezVous(title: "Gérer mon budget", content: "1h15 sur 6 cours", img: "img2"),
+        LeSaviezVous(title: "Mieux consommer", content: "1h15 sur 6 cours", img: "img3"),
     ],
     [
-        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
-        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
-        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
-        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+        LeSaviezVous(title: "Faire des économies", content: "1h15 sur 6 cours", img: "img4"),
+        LeSaviezVous(title: "Gérer mon budget", content: "1h15 sur 6 cours", img: "img5"),
+        LeSaviezVous(title: "Mieux consommer", content: "1h15 sur 6 cours", img: "img6"),
     ],
     [
-        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
-        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
-        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
-        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+        LeSaviezVous(title: "Faire des économies", content: "1h15 sur 6 cours", img: "img1"),
+        LeSaviezVous(title: "Gérer mon budget", content: "1h15 sur 6 cours", img: "img2"),
+        LeSaviezVous(title: "Mieux consommer", content: "1h15 sur 6 cours", img: "img3"),
     ],
     [
-        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
-        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
-        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
-        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+        LeSaviezVous(title: "Faire des économies", content: "1h15 sur 6 cours", img: "img4"),
+        LeSaviezVous(title: "Gérer mon budget", content: "1h15 sur 6 cours", img: "img5"),
+        LeSaviezVous(title: "Mieux consommer", content: "1h15 sur 6 cours", img: "img6"),
     ],
     [
-        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
-        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
-        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
-        LeSaviezVous(title: "Les soldes", content: "blablabla"),
+        LeSaviezVous(title: "Faire des économies", content: "1h15 sur 6 cours", img: "img1"),
+        LeSaviezVous(title: "Gérer mon budget", content: "1h15 sur 6 cours", img: "img2"),
+        LeSaviezVous(title: "Mieux consommer", content: "1h15 sur 6 cours", img: "img3"),
     ],
     [
-        LeSaviezVous(title: "Faire des économies", content: "blablabla"),
-        LeSaviezVous(title: "Gérer mon budget", content: "blablabla"),
-        LeSaviezVous(title: "Mieux consommer", content: "blablabla"),
-        LeSaviezVous(title: "Les soldes", content: "blablabla"),
-    ]
+        LeSaviezVous(title: "Faire des économies", content: "1h15 sur 6 cours", img: "img4"),
+        LeSaviezVous(title: "Gérer mon budget", content: "1h15 sur 6 cours", img: "img5"),
+        LeSaviezVous(title: "Mieux consommer", content: "1h15 sur 6 cours", img: "img6"),
+    ],
 ]

@@ -12,12 +12,72 @@ struct LeSaviezVousView: View {
     var body: some View {
         NavigationView{
             ScrollView{
-                VStack{
-                    Text("Finance")
+                VStack(alignment: .leading){
+                    Text("Éducation financière")
                         .font(.title)
+                        .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
                         .padding(.init(top: 50, leading: 25, bottom: 0, trailing: 0))
+                    Text("Formez-vous grâce à nos cours techniques et accessibles. Ayez toutes les clés en mains pour vous assurer un avenir serein.").padding(.init(top: 1, leading: 25, bottom: 0, trailing: 0))
+                    
+                }
+                VStack{
+                    HStack{
+                        ZStack{
+                            Image("card")
+                                .resizable(resizingMode: .stretch)
+                            VStack(alignment: .leading){
+                                Text("45 cours").fontWeight(.bold).foregroundColor(.white).multilineTextAlignment(.leading)
+                                Text("Créés par des experts").font(.caption).fontWeight(.light).foregroundColor(.white)
+                            }
+                            
+                        }.cornerRadius(6)
+                        Spacer()
+                        ZStack{
+                            Image("card")
+                                .resizable(resizingMode: .stretch)
+                            VStack(alignment: .leading){
+                                Text("100 quiz").fontWeight(.bold).foregroundColor(.white).multilineTextAlignment(.leading)
+                                Text("Pour valider les acquis").font(.caption).fontWeight(.light).foregroundColor(.white)
+                            }
+                            
+                        }.cornerRadius(6)
+                    }
+                    .padding(.horizontal, 25.0)
+                    .frame(height: 65.0)
+                    HStack{
+                        ZStack{
+                            Image("card")
+                                .resizable(resizingMode: .stretch)
+                            VStack(alignment: .leading){
+                                Text("+1M apprentis").fontWeight(.bold).foregroundColor(.white).multilineTextAlignment(.leading)
+                                Text("Une communauté forte").font(.caption).fontWeight(.light).foregroundColor(.white)
+                            }
+                            
+                        }.cornerRadius(6)
+                        Spacer()
+                        ZStack{
+                            Image("card")
+                                .resizable(resizingMode: .stretch)
+                            VStack(alignment: .leading){
+                                Text("Récompenses").fontWeight(.bold).foregroundColor(.white).multilineTextAlignment(.leading)
+                                Text("Séminaires, formations...").font(.caption).fontWeight(.light).foregroundColor(.white)
+                            }
+                            
+                        }.cornerRadius(6)
+                    }
+                    .padding(.horizontal, 25.0)
+                    .frame(height: 65.0)
+                }
+                .padding(.top, 15.0)
+                Spacer()
+                VStack{
+                    Text("Budget")
+                        .font(.title)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .multilineTextAlignment(.leading)
+                        .padding(.init(top: 35, leading: 25, bottom: 0, trailing: 0))
                     ScrollView(.horizontal,showsIndicators: false) {
                         HStack(spacing: 20) {
                             Spacer()
@@ -29,7 +89,7 @@ struct LeSaviezVousView: View {
                     }
                     .padding(.bottom, 50)
                     Spacer()
-                    Text("Épargne")
+                    Text("Comptes et moyens de paiement")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
@@ -76,7 +136,7 @@ struct LeSaviezVousView: View {
                     }.padding(.bottom, 50)
                     Spacer()
                 }
-            }.navigationTitle(Text("Le saviez-vous")).padding(.bottom, 25)
+            }.navigationTitle(Text("Le saviez-vous ?")).padding(.bottom, 25)
         
         }
     }
